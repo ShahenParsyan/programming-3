@@ -1,4 +1,4 @@
-class YelWt extends LivingCreature{
+class YelWt extends LivingCreature {
     mul() {
         let foods = this.chooseCell(1)
         let food = random(foods)
@@ -10,6 +10,6 @@ class YelWt extends LivingCreature{
                 this.multiply = 0;
             }
         }
-        
-    } 
+
+    }
 }

@@ -1,6 +1,6 @@
-class GrassWt extends LivingCreature{
-    constructor(x, y, index){
-     super(x,y, index)
+class GrassWt extends LivingCreature {
+    constructor(x, y, index) {
+        super(x, y, index)
     }
     mul() {
         let foods = this.chooseCell(0)
@@ -13,7 +13,7 @@ class GrassWt extends LivingCreature{
                 this.multiply = 0;
             }
         }
-        else{
+        else {
             this.mul1
         }
     }
@@ -29,6 +29,6 @@ class GrassWt extends LivingCreature{
             }
         }
     }
-    
+
 }
 //////////////////////////////////////////////

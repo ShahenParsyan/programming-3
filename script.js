@@ -1,6 +1,6 @@
-var matrix =[]
-var n =40
-var m =70
+var matrix = []
+var n = 40
+var m = 70
 var side = 20;
 var grassArr = [];
 var yelArr = []
@@ -9,25 +9,25 @@ var wotherArr = []
 var grasswtArr = []
 var yelwtArr = []
 var peryArr = []
-for(let i=0;i<n;i++){
+for (let i = 0; i < n; i++) {
     matrix.push([])
-    for(let j=0;j<m;j++){
+    for (let j = 0; j < m; j++) {
         matrix[i].push(0)
     }
 }
-function carecters(index, count){
-    for(let i=0;i<count;i++){
-        var v = Math.floor(random(0,n))
-        var w = Math.floor(random(0,m))
-        matrix[v][w]=index
+function carecters(index, count) {
+    for (let i = 0; i < count; i++) {
+        var v = Math.floor(random(0, n))
+        var w = Math.floor(random(0, m))
+        matrix[v][w] = index
     }
 }
 function setup() {
-    carecters(1,50)
-    carecters(2,60)
-    carecters(3,20)
-    carecters(4,500)
-    carecters(7,15)
+    carecters(1, 50)
+    carecters(2, 60)
+    carecters(3, 20)
+    carecters(4, 500)
+    carecters(7, 15)
     frameRate(5);
     createCanvas(matrix[0].length * side, matrix.length *
         side);
@@ -74,7 +74,7 @@ function draw() {
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
             if (matrix[y][x] == 0) {
-                fill(200,200,200);
+                fill(200, 200, 200);
             }
             else if (matrix[y][x] == 1) {
                 fill(25, 255, 25);
@@ -120,6 +120,6 @@ function draw() {
         peryArr[i].eat();
     }
 
-    
+
 
 }
