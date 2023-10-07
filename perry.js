@@ -1,11 +1,6 @@
-class Perry{
+class Perry extends LivingCreature{
     constructor(x, y, index){
-    this.x = x;
-    this.y = y;
-    this.energy=8
-    this.index = index;
-    this.multiply = 0;
-    this.directions = [];
+     super(x,y,index)
     }
     getNewCoordinates(){
         this.directions = [
